@@ -1,0 +1,43 @@
+<div class="card" style="width: 1400px">
+    <h3 style="margin: 1%;">Salesman commission report</h3>
+    <div class="card-header">
+        <input type="text" placeholder="Search..." (input)="applyFilter($event)">
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>SR No.</th>
+                    <th>Salesman Name</th>
+                    <th>Fixed Commission</th>
+                    <th>Class A Commission</th>
+                    <th>Class B Commission</th>
+                    <th>Class C Commission</th>
+                    <th>Additional Commission</th>
+                    <th>Overall Commission</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let model of salesmanCommissionReportpaginatedData; let i=index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{model.salesmanName}}</td>
+                    <td>${{model.fixedCommissionAmount}}</td>
+                    <td>${{model.classACommissionAmount}}</td>
+                    <td>${{model.classBCommissionAmount}}</td>
+                    <td>${{model.classCCommissionAmount}}</td>
+                    <td>${{model.additionalCommission}}</td>
+                    <td>${{model.overallCommission}}</td>
+                </tr>
+                <tr *ngIf="salesmanCommissionReportfilteredData.length === 0">
+                    <td colspan="4">No results found.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination" style="margin: 10px;">
+        <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+</div>

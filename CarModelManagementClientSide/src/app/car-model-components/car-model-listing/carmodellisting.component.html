@@ -1,0 +1,53 @@
+<div class="card" style="width: 1400px">
+    <h3 style="margin: 1%;">Car Model List</h3>
+    <div class="card-header">
+        <a class="btn btn-success" routerLink="addcarmodel">Add New Model</a>
+        <input type="text" placeholder="Search..." (input)="applyFilter($event)">
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>SR No.</th>
+                    <th (click)="sortData('brandName')">Brand</th>
+                    <th (click)="sortData('className')">Class</th>
+                    <th (click)="sortData('modelName')">Model Name</th>
+                    <th (click)="sortData('modelCode')">Model Code</th>
+                    <th (click)="sortData('description')">Description</th>
+                    <th (click)="sortData('features')">Features</th>
+                    <th (click)="sortData('price')">Price</th>
+                    <th (click)="sortData('dateOfManufacturing')">Date Of Manufacturing</th>
+                    <th (click)="sortData('active')">Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let model of paginatedData; let i=index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{model.carBrands.brandName}}</td>
+                    <td>{{model.carClasses.className}}</td>
+                    <td>{{model.modelName}}</td>
+                    <td>{{model.modelCode}}</td>
+                    <td>{{model.description}}</td>
+                    <td>{{model.features}}</td>
+                    <td>${{model.price}}</td>
+                    <td>{{model.dateOfManufacturing | date:'MM/dd/yyyy' }}</td>
+                    <td>{{model.active}}</td>
+                    <td style="width: 15%">
+                        <a class="btn btn-primary" (click)="editCarModel(model.id)">Edit</a> |
+                        <a class="btn btn-danger" (click)="removeCarModel(model.id)">Delete</a>
+                    </td>
+                </tr>
+                <tr *ngIf="filteredData.length === 0">
+                    <td colspan="4">No results found.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination" style="margin: 10px;">
+        <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+</div>

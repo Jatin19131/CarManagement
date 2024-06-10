@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\bin\Debug\net6.0\CarManagement.ServiceLayer.deps.json
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\bin\Debug\net6.0\CarManagement.ServiceLayer.dll
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\bin\Debug\net6.0\CarManagement.ServiceLayer.pdb
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\bin\Debug\net6.0\CarManagement.DataLayer.dll
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\bin\Debug\net6.0\CarManagement.DataLayer.pdb
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.csproj.CopyComplete
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.dll
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\refint\CarManagement.ServiceLayer.dll
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\CarManagement.ServiceLayer.pdb
+C:\Users\Administrator\source\repos\CarModelManagement\CarModelManagement.ServiceLayer\obj\Debug\net6.0\ref\CarManagement.ServiceLayer.dll

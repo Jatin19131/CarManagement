@@ -1,0 +1,42 @@
+.card {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.search-box {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+

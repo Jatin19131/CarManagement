@@ -1,0 +1,15 @@
+.active-checkbox {
+    margin: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.active-checkbox-label {
+    margin-right: 10px;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-color: #ced4da;
+    border-right: 0;
+}

@@ -30,7 +30,8 @@
                         <label>Model Name</label>
                         <span class="text-danger">*</span>
                         <input formControlName="modelNameControl" class="form-control" />
-                        <!-- <span *ngIf="isSubmitted && carModelForm.get('modelNameControl').error('required')" class="invalid-feedback">Model name is required</span> -->
+                       <span *ngIf="carModelForm.get('modelNameControl')?.getError('required')">Model name is
+                            required</span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -38,6 +39,8 @@
                         <label>Model Code</label>
                         <span class="text-danger">*</span>
                         <input formControlName="modelCodeControl" class="form-control" />
+                        <span *ngIf="carModelForm.get('modelCodeControl')?.getError('required')">Model code is
+                            required</span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -45,6 +48,8 @@
                         <label>Description</label>
                         <span class="text-danger">*</span>
                         <textarea formControlName="descriptionControl" class="form-control"></textarea>
+                        <span *ngIf="carModelForm.get('descriptionControl')?.getError('required')">Description is
+                            required</span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -52,6 +57,8 @@
                         <label>Features</label>
                         <span class="text-danger">*</span>
                         <textarea formControlName="featuresControl" class="form-control"></textarea>
+                        <span *ngIf="carModelForm.get('featuresControl')?.getError('required')">Features is
+                            required</span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -63,6 +70,8 @@
                                 <span class="input-group-text">$</span>
                             </div>
                             <input formControlName="priceControl" class="form-control" />
+                            <span *ngIf="carModelForm.get('priceControl')?.getError('required')">Price is
+                                required</span>
                         </div>
                     </div>
                 </div>
@@ -72,6 +81,8 @@
                         <span class="text-danger">*</span>
                         <input formControlName="dateOfManufacturingControl" placeholder="YYYY/MM/DD"
                             class="form-control" ngbDatepicker #dp="ngbDatepicker" (click)="dp.toggle()">
+                            <span *ngIf="carModelForm.get('dateOfManufacturingControl')?.getError('required')">Manufacturing date is
+                                required</span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
